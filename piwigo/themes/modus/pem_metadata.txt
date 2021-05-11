@@ -1,0 +1,2 @@
+git@github.com:Piwigo/piwigo-modus.git
+b0110e4e603b9428250be98839741f66895ee162 2021-03-03 13:27:33 +0100

@@ -1,0 +1,31 @@
+version: '3'
+services:
+  piwigo:
+    container_name: piwigocontainer
+    image: piwigoimage
+    volumes: 
+      - my-datavolume:/var/lib/piwigo
+    networks:
+      - piwigonetwork
+    ports:
+      - "80:80"
+
+  mysql:
+    container_name: mysqlcontainer
+    image: mysql:8.0.18
+    command: ["--default-authentication-plugin=mysql_native_password"]
+    networks:
+      - piwigonetwork
+    environment:
+      MYSQL_USER: "piwigo"
+      MYSQL_PASSWORD: "piwigo"
+      MYSQL_DATABASE: "piwigo"
+      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+    volumes: 
+      - my-datavolume:/var/lib/mysql
+
+volumes: 
+  my-datavolume:
+
+networks:
+  piwigonetwork:
