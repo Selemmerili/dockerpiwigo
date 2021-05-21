@@ -68,7 +68,7 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
- <h1>Se rendre dans le dossier et éxecuter les commandes suivantes :</h1>
+ <h1>Se rendre dans le dossier et exécuter les commandes suivantes :</h1>
  <h1>docker build -t piwigoimage .</h1>
  <h1>docker-compose up</h1>
 
