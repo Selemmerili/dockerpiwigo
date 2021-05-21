@@ -3,8 +3,6 @@ services:
   piwigo:
     container_name: piwigocontainer
     image: piwigoimage
-    volumes: 
-      - my-datavolume:/var/lib/piwigo
     networks:
       - piwigonetwork
     ports:
@@ -21,11 +19,6 @@ services:
       MYSQL_PASSWORD: "piwigo"
       MYSQL_DATABASE: "piwigo"
       MYSQL_RANDOM_ROOT_PASSWORD: "true"
-    volumes: 
-      - my-datavolume:/var/lib/mysql
-
-volumes: 
-  my-datavolume:
 
 networks:
   piwigonetwork:
