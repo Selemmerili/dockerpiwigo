@@ -38,9 +38,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><h1>Se rendre dans le dossier et éxecuter les commandes suivantes :</h1></li>
-        <li><h1>docker build -t piwigoimage .</h1></li>
-        <li><h1>docker-compose up</h1></li>
+        
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -71,6 +69,9 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
+ <h1>Se rendre dans le dossier et éxecuter les commandes suivantes :</h1>
+ <h1>docker build -t piwigoimage .</h1>
+ <h1>docker-compose up</h1>
 
 ### Prerequisites
 
