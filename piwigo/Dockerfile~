@@ -1,7 +1,0 @@
-FROM php:7.3-apache
-
-COPY piwigo/ /var/www/html
-
-RUN docker-php-ext-install mysqli
-
-RUN chmod 777 _data

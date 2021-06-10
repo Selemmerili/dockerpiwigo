@@ -2,7 +2,7 @@ version: '3'
 services:
   piwigo:
     container_name: piwigocontainer
-    image: piwigoimage
+    build: . 
     networks:
       - piwigonetwork
     ports:
